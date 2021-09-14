@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
 nav {
   width: 100%;
   height: 9vh;
@@ -29,11 +31,57 @@ nav .navbar-container .navbar-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 0 0 0px;
 }
 nav .navbar-container .navbar-button .navbar-logo {
   font-size: 1.15rem;
   margin-right: 6px;
+}
+
+.searchbar-container {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.searchbar .searchbar-input, .searchbar .searchbar-select {
+  border-radius: 2px;
+  border: 1px solid #858585;
+  height: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #858585;
+  font-size: 0.9rem;
+}
+.searchbar .searchbar-input {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 0 40px;
+}
+.searchbar .searchbar-select-container {
+  position: relative;
+  width: 240px;
+}
+.searchbar .select-container::after {
+  content: "ˬ";
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 0;
+  right: 20%;
+  position: absolute;
+}
+.searchbar .searchbar-select {
+  appearance: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
 }
 
 * {
@@ -46,6 +94,12 @@ html {
   font-size: calc(60% + 0.8vmin);
   font-family: "Nunito Sans", sans-serif;
   color: #858585;
+}
+
+.app {
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.scss.map */
