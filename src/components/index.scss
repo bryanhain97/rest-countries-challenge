@@ -1,0 +1,23 @@
+@import './variables';
+@import './Navbar/Navbar';
+@import './Searchbar/Searchbar';
+// include sass partials of every component here
+// only Dart Sass currently supports @use rule => @import instead.
+// sass --watch ./components/index.scss App.css to automatically compile;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: calc(60% + 0.8vmin);
+    font-family: $fontfamily;
+    color: $darkgray
+}
+.app {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+}
+/*# sourceMappingURL=index.scss.map */

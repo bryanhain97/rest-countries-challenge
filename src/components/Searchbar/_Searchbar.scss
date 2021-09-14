@@ -1,0 +1,49 @@
+@import '../_variables.scss';
+
+
+.searchbar-container {
+    // background-color: aquamarine;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.searchbar {
+    // background-color: rgb(7, 116, 79);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    .searchbar-input,.searchbar-select {
+        border-radius: 2px;
+        border: 1px solid $darkgray;
+        height: 50px;
+        font-family: $fontfamily;
+        color: $darkgray;
+        font-size: 0.9rem;
+    }
+    .searchbar-input {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        padding: 0 40px;
+    }
+    .searchbar-select-container {
+        position: relative;
+        width: 240px;
+    }
+    .select-container::after {
+        content: "\02EC";
+        font-size: 1.5rem;
+        font-weight: bold;
+        top: 0;
+        right: 20%;
+        position: absolute;
+    }
+    .searchbar-select{
+        appearance: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 0 20px;
+    }
+}
