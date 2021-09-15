@@ -8,6 +8,7 @@ export default function Searchbar() {
             <div className="searchbar">
                 <div className="searchbar-input-container">
                     <input placeholder="Search for a country..." className="searchbar-input" type="text" />
+                    <GiMagnifyingGlass className="searchbar-input-icon" />
                 </div>
                 <div className="searchbar-select-container">
                     <select type="select" defaultValue={'DEFAULT'} className="searchbar-select">
