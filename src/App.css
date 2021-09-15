@@ -97,6 +97,14 @@ nav .navbar-container .navbar-button .navbar-logo {
   padding: 0 0 0 20px;
 }
 
+.main-section-container {
+  width: 100%;
+  height: 75%;
+}
+.main-section-container .main-section {
+  width: 90%;
+  margin: 0 auto;
+}
 * {
   padding: 0;
   margin: 0;
