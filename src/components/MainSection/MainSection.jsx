@@ -4,8 +4,10 @@ import './_MainSection.scss';
 
 export default function MainSection() {
     return (
-        <main className="main">
-            
-        </main>
+        <div className="main-section-container">
+            <div className="main-section">
+                jey
+            </div>
+        </div>
     )
 }
