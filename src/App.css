@@ -51,6 +51,11 @@ nav .navbar-container .navbar-button .navbar-logo {
   width: 90%;
   margin: 0 auto;
 }
+.searchbar .searchbar-input-container {
+  display: flex;
+  position: relative;
+  width: 450px;
+}
 .searchbar .searchbar-input, .searchbar .searchbar-select {
   border-radius: 2px;
   border: 1px solid #858585;
@@ -59,11 +64,19 @@ nav .navbar-container .navbar-button .navbar-logo {
   color: #858585;
   font-size: 0.9rem;
 }
+.searchbar .searchbar-input-icon {
+  position: absolute;
+  transform: scaleX(-1) translate(-50%, -50%);
+  top: 50%;
+  left: 10px;
+  font-size: 1.1rem;
+  display: inline-block;
+}
 .searchbar .searchbar-input {
   display: flex;
   justify-content: center;
   width: 400px;
-  padding: 0 40px;
+  padding: 0 50px;
 }
 .searchbar .searchbar-select-container {
   position: relative;
