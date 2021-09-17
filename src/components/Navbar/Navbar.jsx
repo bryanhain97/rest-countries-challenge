@@ -1,20 +1,23 @@
 import './_Navbar.scss';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { HiOutlineMoon, HiOutlineLightBulb } from 'react-icons/hi';
+// import { GiBlackball } from 'react-icons/gi';
 
-export default function Navbar() {
-    const [lightMode, setLightMode] = useState(true);
+export default function Navbar(props) {
+    let {lightmode, handleLightMode} = props;
 
     function handleClick() {
-        setLightMode(!lightMode);
+        lightmode = !lightmode;
+        handleLightMode();
     }
+
     return (
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-title">Where in the world?</div>
-                <button onClick={handleClick}>
+                <button onClick={handleClick} style={lightmode ? { color: "black" } : { color: "white" }}>
                     {
-                        lightMode ?
+                        lightmode ?
                             <div className="navbar-button">
                                 <HiOutlineMoon className="navbar-logo" />Dark Mode
                             </div>
