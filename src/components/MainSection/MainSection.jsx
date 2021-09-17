@@ -6,7 +6,7 @@ export default function MainSection() {
     return (
         <div className="main-section-container">
             <div className="main-section">
-                jey
+                -------main-section-------
             </div>
         </div>
     )
