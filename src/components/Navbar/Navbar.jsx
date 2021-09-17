@@ -14,7 +14,7 @@ export default function Navbar(props) {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="navbar-title">Where in the world?</div>
+                <div className="navbar-title" style={lightmode ? {color: "black"} : {color: "white"}}>Where in the world?</div>
                 <button onClick={handleClick} style={lightmode ? { color: "black" } : { color: "white" }}>
                     {
                         lightmode ?
