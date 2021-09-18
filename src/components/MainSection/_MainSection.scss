@@ -1,15 +1,29 @@
 .main-section-container {
     width: 100%;
-    height: 75%;
+    height: 76%;
     & .main-section {
         width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         margin: 0 auto;
         & .row {
             width: 100%; 
+            height: 50%;
+            margin: 20px 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
+            & p {
+                // margin: 10px;
+                // width: 100%;
+                // height: 100%;
+                display: flex;
+                justify-content: center;
+                flex: 1;
+            }
         }
     }
 }

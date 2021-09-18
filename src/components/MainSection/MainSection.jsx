@@ -4,16 +4,17 @@ import './_MainSection.scss';
 
 
 export default function MainSection(props) {
-    // let { lightmode, dataJSON} = props; // bool
-    // fetch data in App.js Component and pass as props to this Component
+    // const { dataJSON } = props;
     return (
         <div className="main-section-container">
             <div className="main-section">
                 <div className="row">
-                    {/* {dataJSON.map()} */}
-                    {/* <CountryCard lightmode={lightmode}/> */}
                 </div>
                 <div className="row">
+                    {/* <p>asd</p>
+                    <p>asd</p>
+                    <p>asd</p>
+                    <p>asd</p> */}
                 </div>
             </div>
         </div>
