@@ -8,18 +8,17 @@ function App() {
   const [lightMode, setLightMode] = useState(true);
   const [data, setData] = useState([]);
   const BASE_URL = 'https://restcountries.eu/rest/v2/all';
-
+  // const [currentInput, setCurrentInput] = useState();
   useEffect(() => {
     fetch(BASE_URL)
       .then(res => res.json())
       .then(dataJSON => setData(dataJSON));
-  }, [])
-
+  }, []);
 
   return (
     <div className={lightMode ? 'app-light' : 'app-dark'}>
       <Navbar lightmode={lightMode} handleLightMode={() => setLightMode(!lightMode)} />
-      <Searchbar dataJSON={data}/>
+      <Searchbar dataJSON={data} />
       <MainSection dataJSON={data} />
     </div>
   );

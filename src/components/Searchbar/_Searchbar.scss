@@ -28,6 +28,9 @@
         color: $darkgray;
         font-size: 0.9rem;
     }
+    .searchbar-input:focus,.searchbar-select:focus{
+        outline: none;
+    }
     .searchbar-input-icon {
         position: absolute;
         transform: scaleX(-1) translate(-50%,-50%);
@@ -44,7 +47,7 @@
     }
     .searchbar-select-container {
         position: relative;
-        width: 240px;
+        width: 280px;
     }
     .select-container::after {
         content: "\02EC";
@@ -55,9 +58,20 @@
         position: absolute;
     }
     .searchbar-select{
-        appearance: none;
+        color: black;
+        font-weight: 500;
+        position: relative;
         width: 100%;
         margin: 0 auto;
         padding: 0 0 0 20px;
+    }
+    .searchbar-select::-webkit-calendar-picker-indicator{
+        display: none;
+    }
+    .searchbar-select-icon {
+        color: black;
+        position: absolute;
+        top: 18px;
+        left: 248px;
     }
 }
