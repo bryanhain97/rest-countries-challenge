@@ -1,3 +1,32 @@
-@import '../variables';
+@import "../variables";
 
-
+.countrycard-container {
+    background-color: $white;
+    width: 18.5%;
+    height: 100%;
+    display: flex;
+    .countrycard {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        .country-flag {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 50%;
+            max-width: 100%;
+            width: 100%;
+        }
+        .country-name{
+            color: black;
+            text-align: start;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+        }
+        .country-info p {
+            font-size: 1rem;
+            text-align: start;
+        }
+    }
+}

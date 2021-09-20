@@ -1,8 +1,7 @@
 import React from 'react'
 import './_Searchbar.scss';
 import { GiMagnifyingGlass } from 'react-icons/gi';
-import { IoIosArrowDown } from 'react-icons/io';
-import useRef from 'react';
+// import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Searchbar(props) {
     const { dataJSON } = props;
@@ -25,7 +24,7 @@ export default function Searchbar(props) {
                             <option key={option.name} value={option.name}>{option.name}</option>
                         ))}
                     </select>
-                    <IoIosArrowDown className="searchbar-select-icon" />
+                    {/* <IoIosArrowDown className="searchbar-select-icon" /> */}
                 </div>
             </div>
         </div>

@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap");
 nav {
   width: 100%;
   height: 9vh;
@@ -55,12 +58,16 @@ nav .navbar-container .navbar-button .navbar-logo {
   width: 450px;
 }
 .searchbar .searchbar-input, .searchbar .searchbar-select {
+  background-color: white;
   border-radius: 2px;
   border: 1px solid #858585;
   height: 50px;
   font-family: "Nunito Sans", sans-serif;
   color: #858585;
   font-size: 0.9rem;
+}
+.searchbar .searchbar-input:focus, .searchbar .searchbar-select:focus {
+  outline: none;
 }
 .searchbar .searchbar-input-icon {
   position: absolute;
@@ -78,7 +85,7 @@ nav .navbar-container .navbar-button .navbar-logo {
 }
 .searchbar .searchbar-select-container {
   position: relative;
-  width: 240px;
+  width: 280px;
 }
 .searchbar .select-container::after {
   content: "ˬ";
@@ -89,20 +96,80 @@ nav .navbar-container .navbar-button .navbar-logo {
   position: absolute;
 }
 .searchbar .searchbar-select {
-  appearance: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
   width: 100%;
   margin: 0 auto;
   padding: 0 0 0 20px;
 }
+.searchbar .searchbar-select::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.searchbar .searchbar-select-icon {
+  color: black;
+  position: absolute;
+  top: 18px;
+  left: 248px;
+}
 
 .main-section-container {
   width: 100%;
-  height: 75%;
+  height: 76%;
 }
 .main-section-container .main-section {
   width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0 auto;
 }
+.main-section-container .main-section .row {
+  width: 100%;
+  height: 44%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-section-container .main-section .row p {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.countrycard-container {
+  background-color: white;
+  width: 18.5%;
+  height: 100%;
+  display: flex;
+}
+.countrycard-container .countrycard {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.countrycard-container .countrycard .country-flag {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 50%;
+  max-width: 100%;
+  width: 100%;
+}
+.countrycard-container .countrycard .country-name {
+  color: black;
+  text-align: start;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+.countrycard-container .countrycard .country-info p {
+  font-size: 1rem;
+  text-align: start;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -116,16 +183,17 @@ html {
 }
 
 .app-light {
-  background-color: rgb(255, 255, 255);
+  background-color: #f1f1f1;
   max-width: 100vw;
   max-height: 100vh;
   height: 100vh;
 }
+
 .app-dark {
-    background-color: rgb(61, 75, 57);
-    max-width: 100vw;
-    max-height: 100vh;
-    height: 100vh;
+  background-color: #1e291b;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.scss.map */
