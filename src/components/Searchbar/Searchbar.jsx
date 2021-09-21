@@ -19,7 +19,7 @@ export default function Searchbar(props) {
                 </div>
                 <div className="searchbar-select-container">
                     <select type="select" defaultValue={'DEFAULT'} className="searchbar-select">
-                        <option value="DEFAULT" disabled>Filter by region</option>
+                        <option value="DEFAULT" disabled>Filter by Region</option>
                         {dataJSON.map(option => (
                             <option key={option.name} value={option.name}>{option.name}</option>
                         ))}
