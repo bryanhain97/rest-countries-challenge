@@ -2,31 +2,38 @@
 
 .countrycard-container {
     background-color: $white;
-    width: 18.5%;
+    width: 18%;
     height: 100%;
     display: flex;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     .countrycard {
+        background-color: transparent;
         height: 100%;
         width: 100%;
         margin: auto;
         display: flex;
         flex-direction: column;
         .country-flag {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
             height: 50%;
             max-width: 100%;
-            width: 100%;
+            width: 100%
         }
-        .country-name{
+        .country-name {
             color: black;
             text-align: start;
             font-size: 1.1rem;
-            padding: 10px 15px;
+            padding: 15px 20px;
         }
         .country-info p {
+            display: flex;
+            padding: 0 20px;
+            justify-content: flex-start;
             font-size: 1rem;
-            text-align: start;
         }
     }
 }
