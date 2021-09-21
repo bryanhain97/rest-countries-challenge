@@ -5,6 +5,7 @@ import { GiMagnifyingGlass } from 'react-icons/gi';
 
 export default function Searchbar(props) {
     const { dataJSON } = props;
+    let regions = [...new Set(dataJSON.map(object => object.region))].filter(x => x !== "");
     return (
         <div className="searchbar-container">
             <div className="searchbar">
@@ -20,8 +21,8 @@ export default function Searchbar(props) {
                 <div className="searchbar-select-container">
                     <select type="select" defaultValue={'DEFAULT'} className="searchbar-select">
                         <option value="DEFAULT" disabled>Filter by Region</option>
-                        {dataJSON.map(option => (
-                            <option key={option.name} value={option.name}>{option.name}</option>
+                        {regions.map(region => (
+                            <option key={region} value={regions}>{region}</option>
                         ))}
                     </select>
                     {/* <IoIosArrowDown className="searchbar-select-icon" /> */}
